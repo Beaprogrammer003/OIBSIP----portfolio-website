@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.sidebar {
+    position: absolute;
+    background-color: #2d90e2;
+    height: 100vh;
+    font-family: 'Artifika', serif;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+.sidebar nav li a:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.main {
+    width: 90vw;
+    /* background-color: yellow; */
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: rgb(0, 255, 34); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+    margin: 25px;
+}
+
+.hello {
+    font-size: 2.8rem;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.about {
+    font-size: 1.5rem;
+}
+
+.moreAbt {
+    margin-top: 8px;
+}
+
+.buttons {
+    margin-top: 18px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #2d90e2;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #bedef8;
+    color: black;
+    font-size: 0.99rem;
+
+}
+
+.devPic img {
+    height: 58vh;
+    transition: height 0.3s ease-in-out;
+}
+
+.devPic img:hover {
+    height: 60vh;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactForm form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#emailHelp {
+    font-size: 0.9rem;
+    color: rgb(108, 108, 108);
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+.contactForm form div input {
+    width: 56vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.mainForm {
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+.contactForm h1 {
+    padding: 15px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 2px;
+}
+
+.introSec {
+    font-family: 'Artifika', serif;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 34px;
+}
+
+.introSec h1 {
+    text-align: center;
+}
+
+.innerIntro {
+    padding: 34px 45px;
+}
+
+.innerIntro p {
+    padding: 5px;
+}
+
+.skillCont {
+    padding: 0 45px;
+    margin-left: 10rem;
+}
+
+.innerSkill {
+    margin-top: 20px;
+}
+
+.skill {
+    border: 2px solid #2d90e2;
+    width: 20rem;
+}
+
+#skill-1 {
+    width: 17rem;
+    background-color: #bedef8;
+}
+
+#skill-2 {
+    width: 17rem;
+    background-color: #bedef8;
+}
+
+#skill-3 {
+    width: 14rem;
+    background-color: #bedef8;
+}
+
+#skill-4 {
+    width: 9rem;
+    background-color: #bedef8;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+
+#cross {
+    margin-left: 250px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.servicesCon {
+    font-family: 'Artifika', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    margin-left: 10rem;
+}
+
+.servicesCon h1 {
+    text-align: center;
+}
+
+.innerService {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.innerService .service {
+    height: 23rem;
+    width: 23rem;
+    border: none;
+    background-color: #bedef8;
+    border-radius: 5px;
+    padding: 14px 54px;
+    margin: 10px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.service h3,
+p {
+    padding: 10px;
+}
+
+.service:hover {
+    background-color: #ffecdc;
+    box-shadow: -2px 0px 11px 8px rgba(255, 229, 203, 0.72);
+    -webkit-box-shadow: -2px 0px 11px 8px rgba(255, 229, 203, 0.72);
+    -moz-box-shadow: -2px 0px 11px 8px rgba(255, 229, 203, 0.72);
+}
+
+.workCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10rem;
+    margin-top: 34px;
+}
+
+.workCont h1 {
+    margin-bottom: 23px;
+}
+
+.innerWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border: none;
+    background-color: #bedef8;
+    padding: 23px 34px;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.work:hover {
+    background-color: #ffecdc;
+    box-shadow: -2px 0px 11px 8px rgba(255, 229, 203, 0.72);
+    -webkit-box-shadow: -2px 0px 11px 8px rgba(255, 229, 203, 0.72);
+    -moz-box-shadow: -2px 0px 11px 8px rgba(255, 229, 203, 0.72);
+}
+
+#social a i {
+    align-items: center;
+}
+
+/* Utility Class */
+
+.h-1 {
+    height: 1.1rem;
+}
+
+.sm {
+    font-size: 0.9rem;
+    margin: 5px 3px;
+    padding: 7px;
+}
+
+/* .work a .ho:hover {
+    font-size: 0.99rem;    
+} */
+
+@media(max-width: 1288px) {
+    .work {
+        height: 20rem;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 1142px) {
+    .infoContainer {
+        margin-left: 4rem;
+    }
+
+    .introSec {
+        margin-left: 5rem;
+    }
+
+    .skillCont {
+        margin-left: 5rem;
+    }
+
+    .workCont {
+        margin-left: 4rem;
+    }
+
+    .servicesCon {
+        margin-left: 4rem;
+
+    }
+
+    .innerWork {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 920px) {
+    .devPic img {
+        height: 35vh;
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 857px) {
+    .infoContainer {
+        flex-direction: column;
+        padding-top: 10rem;
+        margin-left: 4rem;
+    }
+
+    .introSec {
+        margin-left: 2rem;
+    }
+
+    .skillCont {
+        margin-left: 2rem;
+    }
+
+    .hello {
+        font-size: 1.8rem;
+    }
+
+    .name {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .about {
+        font-size: 1.5rem;
+    }
+
+    .devPic img {
+        height: 30vh;
+        margin-top: 0px;
+    }
+
+    .devPic img:hover {
+        height: 30vh;
+    }
+
+    #cross {
+        margin-left: 250px;
+    }
+
+    .innerIntro {
+        padding-right: 5px;
+    }
+
+    .innerIntro p {
+        padding: 0px;
+    }
+
+    .innerSkill div {
+        width: 80vw;
+    }
+
+    #skill-1 {
+        width: 68vw;
+    }
+
+    #skill-2 {
+        width: 68vw;
+    }
+
+    #skill-3 {
+        width: 56vw;
+    }
+
+    #skill-4 {
+        width: 36vw;
+    }
+
+    #form-check input {
+        margin-bottom: 25px;
+        margin-right: 5px;
+    }
+
+    .innerService {
+        flex-direction: column;
+    }
+
+    .innerWork .work {
+        height: 22rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .infoContainer {
+        margin-left: 1.1rem;
+    }
+
+    .introSec {
+        margin-left: 0;
+    }
+
+    .skillCont {
+        margin-left: 0;
+    }
+
+    .buttons .btn {
+        padding: 10px;
+    }
+
+    .innerService .service {
+        height: 20rem;
+        width: 20rem;
+        padding: 6px 5px;
+    }
+
+    .innerWork .work {
+        font-size: 1.11rem;
+        height: 20rem;
+        width: 20rem;
+        padding: 6px 3px;
+    }
+}
+
+@media (max-width: 377px) {
+    .buttons .btn {
+        padding: 2px;
+        margin-top: 5px;
+    }
+
+    #form-check input {
+        margin-bottom: 54px;
+        margin-right: 8px;
+    }
+
+    .buttons .btn {
+        padding: 7px;
+    }
+
+    .innerWork .work {
+        font-size: 0.9rem;
+        height: 18rem;
+        width: 16rem;
+    }
+}
+
+@media (max-width: 288px) {
+    .infoContainer {
+        margin-top: 174px;
+    }
+
+    .contactForm h1 {
+        font-size: 1.5rem;
+    }
+
+    .mainForm {
+        font-size: 0.99rem;
+        margin-top: 0px;
+    }
+
+    .contactForm form div input {
+        width: 80vw;
+        border-radius: 5px;
+        margin: 2px 0 0 0;
+        padding: 2px;
+    }
+
+    .innerService .service {
+        font-size: 0.9rem;
+        padding: 5px;
+
+        height: 20rem;
+        width: 15rem
+    }
+
+    .innerWork .work {
+        font-size: 0.9rem;
+        height: 22rem;
+        width: 16rem;
+
+    }
+
+}
